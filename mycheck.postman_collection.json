@@ -1,0 +1,147 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mycheck",
+		"_postman_id": "c066e222-bb0d-03b1-7304-c16a49e66e63",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"url": " http://127.0.0.1:8000/api/user",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "noam",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "nrones8@abb.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/login?email=nrones@abb.com&password=1234",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "nrones@abb.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "noam",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "nrones@abb.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user?email=nrone2@abb.com&token=1b349d8c77d38bbf64233a30802e43b517a045898e2aa9d9d72cffbe94a4d20cfd59c6f2139df6a562b419f2e0afe9791491",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "nrone2@abb.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "token",
+							"value": "1b349d8c77d38bbf64233a30802e43b517a045898e2aa9d9d72cffbe94a4d20cfd59c6f2139df6a562b419f2e0afe9791491",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
