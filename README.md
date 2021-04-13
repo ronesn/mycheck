@@ -1,5 +1,5 @@
  simple authentication system.
- implements in laravel
+ implemented in laravel
  The app contain 3 Restful API endpoints:
 1. User registration
     a. POST  name, email & password
